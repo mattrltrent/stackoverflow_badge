@@ -18,7 +18,9 @@ http://example.com/stack_overflow?username=ID&period=PERIOD
 - `username`: Your unique Stack Overflow account ID. Example: `13029516`.
 - `period`: On the stats badge, there's an "n amount of reputation / period" stat, where you select over what duration of time you want to show how much reputation you've gained. The options are: `year`, `quarter`, `month`, `week`, and `day`.
 
-Here's my account's URL for example:
+Your Stack Overflow ID can be found by navigating to your profile in a browser, and looking at the web address. The ID should be the long number present. This is the `username` parameter for your personalized URL. For example, the `13029516` here is my ID: `stackoverflow.com/users/13029516/matthew-trent`.
+
+Here's my final account's URL for example (assuming I want to show my quarterly reputation gain):
 http://example.com/stack_overflow?username=13029516&period=quarter
 
 Once you have your personalized URL, you can add it to your GitHub profile's `README.md` by adding this line:
