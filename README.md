@@ -1,11 +1,13 @@
 
-## Stack Overflow Stats Badge
+# Stack Overflow Stats Badge
 
-**NOTE: This is not published yet. It won't work — soon though!**
+**⚠️ NOTE: The server is not published yet; hence, this won't work. It will soon though!**
 
-Render this stats badge in your GitHub profile!!
+### Render this stats badge in your GitHub profile!!
 
 <img src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_1.JPG?raw=true" style="display: inline"/>
+
+### How to add
 
 Add your personalized URL to your GitHub profile `README.md`. The template URL looks like this:
 
@@ -26,4 +28,7 @@ Once you have your personalized URL, you can add it to your GitHub profile's `RE
 *Obviously, don't include the "+" characters. They must exist, else, this description would try to render the image with url YOUR_URL_HERE and fail :D*
 
 ### Feel free to create issues or PRs!
+
+-  Issues [here](https://github.com/mattrltrent/stackoverflow_badge/issues).
+- PRs [here](https://github.com/mattrltrent/stackoverflow_badge/pulls).
 
