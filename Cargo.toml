@@ -1,0 +1,18 @@
+[package]
+name = "stack_rep"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata]
+authors = ["Matthew Trent <me@matthewtrent.me>"]
+description = "A Rust project to track Stack Overflow reputation."
+homepage = "https://example.com/"
+repository = "https://example.com/"
+license = "MIT"
+
+[dependencies]
+actix-files = "0.6.2"
+actix-web = "4.3.1"
+reqwest = { version = "0.11.3", features = ["gzip", "json"] }
+serde = { version = "1.0.104", features = ["derive"] }
+serde_json = "1.0.96"
