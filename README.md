@@ -2,6 +2,7 @@
 
 <img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_1.png?raw=true"  style="display: inline"/>
 
+Example of it on my GitHub profile [here](https://github.com/mattrltrent).
 
 ## Simple to add:
 
