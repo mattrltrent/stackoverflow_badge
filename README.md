@@ -1,7 +1,5 @@
 
-# Stack Overflow Stats Badge
-
-**⚠️ NOTE: The server is not published yet; hence, this won't work. It will soon though!**
+# Stack Overflow Stats Badge ⚠️ NOT FINISHED YET (CHECK BACK SOON!) ⚠️
 
 ### Render this stats badge in your GitHub profile!!
 
