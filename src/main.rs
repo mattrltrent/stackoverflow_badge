@@ -26,6 +26,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .wrap(rate_limiter_middleware)
             .service(services::stack_overflow::gen_image)
+            .service(services::health::hello_world)
     })
     .bind((host.as_str(), port.parse().expect("Failed to parse port")))?
     .run()
