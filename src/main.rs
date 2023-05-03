@@ -15,7 +15,6 @@ async fn main() -> std::io::Result<()> {
     let backend = InMemoryBackend::builder().build();
     dotenv().ok();
     let port = env::var("PORT").expect("Port not set");
-    let host = env::var("HOST").expect("Host not set");
     HttpServer::new(move || {
         let input = SimpleInputFunctionBuilder::new(Duration::from_secs(60), 15) // 15 requests per minute per ip
             .real_ip_key()
@@ -28,7 +27,7 @@ async fn main() -> std::io::Result<()> {
             .service(services::stack_overflow::gen_image)
             .service(services::health::hello_world)
     })
-    .bind((host.as_str(), port.parse().expect("Failed to parse port")))?
+    .bind(format!("0.0.0.0:{}", port))?
     .run()
     .await
 }
