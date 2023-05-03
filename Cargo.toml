@@ -13,6 +13,7 @@ repository = "https://github.com/mattrltrent/stackoverflow_badge"
 actix-extensible-rate-limit = "0.2.1"
 actix-files = "0.6.2"
 actix-web = "4.3.1"
+dotenv = "0.15.0"
 reqwest = { version = "0.11.3", features = ["gzip", "json"] }
 serde = { version = "1.0.104", features = ["derive"] }
 serde_json = "1.0.96"

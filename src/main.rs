@@ -1,4 +1,4 @@
-use std::time::Duration;
+use std::{time::Duration, env};
 
 use actix_web::{App, HttpServer};
 mod services;
@@ -7,12 +7,17 @@ use actix_extensible_rate_limit::{
     backend::{memory::InMemoryBackend, SimpleInputFunctionBuilder},
     RateLimiter,
 };
+extern crate dotenv;
+use dotenv::dotenv;
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
     let backend = InMemoryBackend::builder().build();
+    dotenv().ok();
+    let port = env::var("PORT").expect("Port not set");
+    let host = env::var("HOST").expect("Host not set");
     HttpServer::new(move || {
-        let input = SimpleInputFunctionBuilder::new(Duration::from_secs(60), 15) // 10 requests per minute per ip
+        let input = SimpleInputFunctionBuilder::new(Duration::from_secs(60), 15) // 15 requests per minute per ip
             .real_ip_key()
             .build();
         let rate_limiter_middleware = RateLimiter::builder(backend.clone(), input)
@@ -22,7 +27,7 @@ async fn main() -> std::io::Result<()> {
             .wrap(rate_limiter_middleware)
             .service(services::stack_overflow::gen_image)
     })
-    .bind(("127.0.0.1", 3000))?
+    .bind((host.as_str(), port.parse().expect("Failed to parse port")))?
     .run()
     .await
 }
