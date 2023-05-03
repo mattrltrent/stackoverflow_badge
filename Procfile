@@ -1,1 +1,1 @@
-web: ./target/release/personal-website-backend
+web: ./target/release/stack_rep
