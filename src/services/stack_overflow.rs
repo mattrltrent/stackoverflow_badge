@@ -35,11 +35,11 @@ struct StackOverflowUser {
 impl Period {
     fn to_str(&self) -> &str {
         match self {
-            Period::Year => "year",
-            Period::Quarter => "quarter",
-            Period::Month => "month",
-            Period::Week => "week",
-            Period::Day => "day",
+            Period::Year => "this year",
+            Period::Quarter => "this quarter",
+            Period::Month => "this month",
+            Period::Week => "this week",
+            Period::Day => "today",
         }
     }
     // convert a period to a specific field on StackOverflowUser
@@ -91,7 +91,7 @@ async fn gen_image(query: web::Query<QueryParams>) -> impl Responder {
         }
         Err(_) => return HttpResponse::InternalServerError().finish(),
     };
-    let svg_content = include_str!("../../assets/stack_overflow.svg");
+    let svg_content = include_str!("../../assets/stack_overflow.svg"); // stack_overflow
     let svg_content = svg_content.replace(
         "{{rep}}",
         &format!(
@@ -102,7 +102,7 @@ async fn gen_image(query: web::Query<QueryParams>) -> impl Responder {
     let svg_content = svg_content.replace(
         "{{rep_change}}",
         &format!(
-            "{}{} this {}",
+            "{}{} {}",
             if query.period.to_field(&user) >= 0 {
                 "+"
             } else {
