@@ -113,7 +113,7 @@ async fn gen_image(query: web::Query<QueryParams>) -> impl Responder {
         ),
     );
     let svg_content = svg_content.replace(
-        "{{golds}}",
+        "{{bronzes}}",
         &format!(
             "{} {}",
             utils::numbers::format_number(*&user.badge_counts.bronze as i64),
@@ -137,7 +137,7 @@ async fn gen_image(query: web::Query<QueryParams>) -> impl Responder {
         ),
     );
     let svg_content = svg_content.replace(
-        "{{bronzes}}",
+        "{{golds}}",
         &format!(
             "{} {}",
             utils::numbers::format_number(*&user.badge_counts.gold as i64),

@@ -1,66 +1,37 @@
+# Stack Overflow Stats Badge For Your GitHub Profile 🚀
 
-  
+<img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_1.png?raw=true"  style="display: inline"/>
 
-# Stack Overflow Stats Badge ⚠️ NOT FINISHED YET ⚠️ (*check back tomorrow and it will be done*).  Until then, feel free to add it and it'll render when the server goes up.
 
-  
+## Simple to add:
 
-### Render this stats badge in your GitHub profile!!
+1. Go to [Stack Overflow](https://stackoverflow.com/), then click on your profile. Once on your profile, you should see a number in the URL bar. This is your **account ID**.
 
-  
+   For example, here is my account ID:
 
-<img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_1.JPG?raw=true"  style="display: inline"/>
+   <img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_2.jpeg?raw=true"  style="display: inline"/>
 
-  
+2. Displayed on the stats badge is "*+ some number of reputation per some time period*". You need to choose over what time period you want us to calculate your reputation gain. The options are `day`,  `week`, `month`, `quarter`, and `year`. This is your **period**.
 
-### How to add
+3. Take the base URL, and insert your newly found **account ID** and **period** where appropriate: 
 
-  
+   URL: <code>https://stackoverflow-badge.herokuapp.com/stack_overflow?username=<b>account ID</b>&period=<b>period</b></code>
 
-Add your personalized URL to your GitHub profile `README.md`. The template URL looks like this:
+   For example, here is the URL for my account if I wanted to show my reputation gain quarterly: <code>https://stackoverflow-badge.herokuapp.com/stack_overflow?username=<b>13029516</b>&period=<b>quarter</b></code>
 
-  
+4. Insert this into your GitHub profile's `README.md`, obviously with your own failure text and personalized URL:
 
-http://example.com/stack_overflow?username=ID&period=PERIOD
+   `![some text to render if the image fails to load](YOUR URL)`
 
-  
+## Limitations:
 
-...where you must fill in the query parameters in the URL for your:
+These restrictions shouldn't interfere with regular usage:
 
-  
+- You're rate limited to loading 15 different stat badges every 60 seconds based on your IP.
+- The StackAPI limits everyone to loading 300 different profiles every 24 hours based on IP.
 
--  `username`: Your unique Stack Overflow account ID. Example: `13029516`.
 
--  `period`: On the stats badge, there's an "n amount of reputation / period" stat, where you select over what duration of time you want to show how much reputation you've gained. The options are: `year`, `quarter`, `month`, `week`, and `day`.
-
-  
-
-Your Stack Overflow ID can be found by navigating to your profile in a browser, and looking at the web address. The ID should be the long number present. This is the `username` parameter for your personalized URL. For example, the `13029516` here is my ID: `stackoverflow.com/users/13029516/matthew-trent`.
-
-  
-
-Here's my final account's URL for example (assuming I want to show my quarterly reputation gain):
-
-http://example.com/stack_overflow?username=13029516&period=quarter
-
-  
-
-Once you have your personalized URL, you can add it to your GitHub profile's `README.md` by adding this line:
-
-  
-
-! + [image] + (YOUR_URL_HERE)
-
-  
-
-*Obviously, don't include the "+" characters. They must exist, else, this description would try to render the image with url YOUR_URL_HERE and fail :D*
-
-  
-
-### Feel free to create issues or PRs!
-
-  
+## Feel free to create issues or PRs!
 
 - Issues [here](https://github.com/mattrltrent/stackoverflow_badge/issues).
-
 - PRs [here](https://github.com/mattrltrent/stackoverflow_badge/pulls).
