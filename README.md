@@ -1,6 +1,6 @@
 # Stack Overflow Stats Badge For Your GitHub Profile 🚀
 
-<img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_1.JPG?raw=true"  style="display: inline"/>
+![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year)
 
 Example of it on my GitHub profile [here](https://github.com/mattrltrent).
 
