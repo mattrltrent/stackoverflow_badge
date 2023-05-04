@@ -156,7 +156,7 @@ async fn gen_card(query: QueryParams) -> impl Responder {
 }
 
 /// New handler
-#[get("/stack_overflow")]
+#[get("/stackoverflow")]
 async fn handler_1(query: web::Query<QueryParams>) -> impl Responder {
     gen_card(query.into_inner()).await
 }

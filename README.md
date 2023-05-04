@@ -1,6 +1,6 @@
 # Stack Overflow Stats Badge For Your GitHub Profile 🚀
 
-<img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_1.png?raw=true"  style="display: inline"/>
+<img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_1.JPG?raw=true"  style="display: inline"/>
 
 Example of it on my GitHub profile [here](https://github.com/mattrltrent).
 
@@ -16,9 +16,9 @@ Example of it on my GitHub profile [here](https://github.com/mattrltrent).
 
 3. Take the base URL, and insert your newly found **account ID** and **period** where appropriate: 
 
-   URL: <code>https://stackoverflow-badge.herokuapp.com/stack_overflow?username=<b>account ID</b>&period=<b>period</b></code>
+   URL: <code>https://stackoverflow-badge.herokuapp.com/stackoverflow?username=<b>account ID</b>&period=<b>period</b></code>
 
-   For example, here is the URL for my account if I wanted to show my reputation gain quarterly: <code>https://stackoverflow-badge.herokuapp.com/stack_overflow?username=<b>13029516</b>&period=<b>quarter</b></code>
+   For example, here is the URL for my account if I wanted to show my reputation gain quarterly: <code>https://stackoverflow-badge.herokuapp.com/stackoverflow?username=<b>13029516</b>&period=<b>quarter</b></code>
 
 4. Insert this into your GitHub profile's `README.md`, obviously with your own failure text and personalized URL:
 
