@@ -29,7 +29,7 @@ struct StackOverflowUser {
     reputation_change_week: i32,
     reputation_change_day: i32,
     reputation: i32,
-    display_name: String,
+    display_name: String, // don't add _ to this field or it won't deserialize properly
 }
 
 impl Period {
@@ -61,8 +61,7 @@ struct BadgeCounts {
     gold: i32,
 }
 
-#[get("/stack_overflow")]
-async fn gen_image(query: web::Query<QueryParams>) -> impl Responder {
+async fn gen_card(query: QueryParams) -> impl Responder {
     let user = match reqwest::Client::builder()
         .gzip(true)
         .build()
@@ -151,4 +150,20 @@ async fn gen_image(query: web::Query<QueryParams>) -> impl Responder {
     HttpResponse::Ok()
         .content_type("image/svg+xml")
         .body(svg_content)
+}
+
+/// New handler
+#[get("/stack_overflow")]
+async fn handler_1(query: web::Query<QueryParams>) -> impl Responder {
+    gen_card(query.into_inner()).await
+}
+
+/// Old handler (not reccomended for use, but still works)
+#[get("/api/StackOverflowBadge/{id}")]
+async fn handler_2(id: web::Path<i64>) -> impl Responder {
+    let query = QueryParams {
+        username: *id,
+        period: Period::Year, // assumes default period is rep gained per year
+    };
+    gen_card(query).await
 }
