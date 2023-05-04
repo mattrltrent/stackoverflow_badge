@@ -26,13 +26,15 @@ Example of it on my GitHub profile [here](https://github.com/mattrltrent).
 
    `![some text to render if the image fails to load](YOUR URL)`
 
+5. If you're still struggling, check out how I added it to my own profile's `README.md` [here](https://github.com/mattrltrent/mattrltrent/blob/main/README.md).
+
 ## Limitations:
 
 These restrictions shouldn't interfere with regular usage:
 
+- The badge is cached for 15 minutes, so its data can possibly lag 15 minutes behind your true Stack Overflow stats. This is done to reduce server load.
 - You're rate limited to loading 15 different stat badges every 60 seconds based on your IP.
 - The StackAPI limits everyone to loading 300 different profiles every 24 hours based on IP.
-
 
 ## Feel free to create issues or PRs!
 

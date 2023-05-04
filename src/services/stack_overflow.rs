@@ -149,9 +149,8 @@ async fn gen_card(query: QueryParams) -> impl Responder {
     );
     HttpResponse::Ok()
         .content_type("image/svg+xml")
-        // disable caching
-        .insert_header(("Cache-Control", "no-cache, max-age=0"))
-        .insert_header(("Expires", "0"))
+        // cache for max 15 minutes before needing revalidation
+        .insert_header(("Cache-Control", "public, max-age=900"))
         .body(svg_content)
 }
 
