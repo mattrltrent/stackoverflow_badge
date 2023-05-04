@@ -16,11 +16,13 @@ Example of it on my GitHub profile [here](https://github.com/mattrltrent).
 
 3. Take the base URL, and insert your newly found **account ID** and **period** where appropriate: 
 
-   URL: <code>https://stackoverflow-badge.herokuapp.com/stackoverflow?username=<b>account ID</b>&period=<b>period</b></code>
+   <img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_3.jpg?raw=true"  style="display: inline"/>
 
-   For example, here is the URL for my account if I wanted to show my reputation gain quarterly: <code>https://stackoverflow-badge.herokuapp.com/stackoverflow?username=<b>13029516</b>&period=<b>quarter</b></code>
+   For example, here is the URL for my account if I wanted to show my reputation gain quarterly:
 
-4. Insert this into your GitHub profile's `README.md`, obviously with your own failure text and personalized URL:
+   <img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_4.jpg?raw=true"  style="display: inline"/>
+
+4. Insert this text into your GitHub profile's `README.md`, obviously with your own failure text and personalized URL:
 
    `![some text to render if the image fails to load](YOUR URL)`
 
