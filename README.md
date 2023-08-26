@@ -1,5 +1,7 @@
 # Stack Overflow Stats Badge For Your GitHub Profile 🚀
 
+## A GitHub ⭐️ is appreciated if this helps you!
+
 ![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year)
 
 Example of it on my GitHub profile [here](https://github.com/mattrltrent).
