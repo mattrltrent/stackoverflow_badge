@@ -26,11 +26,11 @@ Example of it on my GitHub profile [here](https://github.com/mattrltrent).
 
 4. Here is the copyable version, just change the "USERNAME" and "PERIOD": https://stackoverflow-badge.herokuapp.com/stackoverflow?username=USERNAME&period=PERIOD.
 
-5. Insert this text into your GitHub profile's `README.md`, obviously with your own failure text and personalized URL:
+5. Insert this URL from step 4 into your GitHub profile's `README.md` exactly like this (obviously with your own failure text and personalized URL):
 
-   `![some text to render if the image fails to load](YOUR URL)`
+   `![some text to render if the image fails to load](step 4 URL)`
 
-6. If you're still struggling, check out how I added it to my own profile's `README.md` [here](https://github.com/mattrltrent/mattrltrent/blob/main/README.md).
+6. If you're still struggling, check out how I added it to my own profile's `README.md` [here](https://github.com/mattrltrent/mattrltrent/blob/main/README.md?plain=1).
 
 ## Limitations:
 
