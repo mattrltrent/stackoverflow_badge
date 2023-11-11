@@ -4,6 +4,7 @@ use actix_web::{get, web, HttpResponse, Responder};
 use serde::Deserialize;
 
 use reqwest;
+use tokio;
 
 #[derive(Deserialize)]
 #[serde(rename_all = "snake_case")]
@@ -54,6 +55,21 @@ impl Period {
     }
 }
 
+async fn update_use_counter() {
+    let client = reqwest::Client::builder()
+        .gzip(true)
+        .build()
+        .unwrap();
+
+    let request = client
+        .post("https://hidden-coast-90561-45544df95b1b.herokuapp.com/api/v1/analytics/?kind=stackoverflow")
+        .send();
+
+    tokio::spawn(async move {
+        let _ = request.await;
+    });
+}
+
 #[derive(Debug, Deserialize)]
 struct BadgeCounts {
     bronze: i32,
@@ -62,6 +78,7 @@ struct BadgeCounts {
 }
 
 async fn gen_card(query: QueryParams) -> impl Responder {
+    update_use_counter().await;
     let user = match reqwest::Client::builder()
         .gzip(true)
         .build()
