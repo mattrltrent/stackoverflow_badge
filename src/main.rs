@@ -36,8 +36,8 @@ async fn main() -> std::io::Result<()> {
             .wrap(rate_limiter_middleware)
             // Adds logging (output level = info!() level)
             .wrap(Logger::default())
-            .service(services::stack_overflow::handler_1)
-            .service(services::stack_overflow::handler_2)
+            .service(services::stackoverflow::handler_1)
+            .service(services::stackoverflow::handler_2)
             .service(services::health::health_check)
     })
     .bind(format!("0.0.0.0:{}", port))?

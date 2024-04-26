@@ -19,6 +19,7 @@ pub enum Period {
 struct QueryParams {
     username: i64,
     period: Period,
+    mini: Option<bool>,
 }
 
 #[derive(Debug, Deserialize)]
@@ -107,7 +108,11 @@ async fn gen_card(query: QueryParams) -> impl Responder {
         }
         Err(_) => return HttpResponse::InternalServerError().finish(),
     };
-    let svg_content = include_str!("../../assets/stack_overflow.svg"); // stack_overflow
+    // let svg_content = include_str!("../../assets/stackoverflow.svg"); // stackoverflow
+    let mut svg_content = include_str!("../../assets/stackoverflow.svg");
+    if query.mini.is_some() && query.mini.unwrap(){
+        svg_content = include_str!("../../assets/stackoverflow_mini.svg");
+    }
     let svg_content = svg_content.replace(
         "{{rep}}",
         &format!(
@@ -183,6 +188,7 @@ async fn handler_2(id: web::Path<i64>) -> impl Responder {
     let query = QueryParams {
         username: *id,
         period: Period::Year, // assumes default period is rep gained per year
+        mini: None,
     };
     gen_card(query).await
 }

@@ -1,12 +1,14 @@
-# Stack Overflow Stats Badge For Your GitHub Profile 🚀
+# Stackoverflow Stats Badge For Your GitHub Profile 🚀
 
-## A GitHub ⭐️ is appreciated if this helps you!
+Example of it on my GitHub profile [here](https://github.com/mattrltrent). Give it a star if it helps you! ⭐️
 
-![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year)
+1. **Full badge:**
+   ![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year)
 
-Example of it on my GitHub profile [here](https://github.com/mattrltrent).
+2. **With `&mini=true` URL param appended:**
+   ![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year&mini=true)
 
-## Simple to add:
+## Adding full badge version
 
 1. Go to [Stack Overflow](https://stackoverflow.com/), then click on your profile. Once on your profile, you should see a number in the URL bar. This is your **account ID**.
 
@@ -31,6 +33,14 @@ Example of it on my GitHub profile [here](https://github.com/mattrltrent).
    `![some text to render if the image fails to load](step 4 URL)`
 
 6. If you're still struggling, check out how I added it to my own profile's `README.md` [here](https://github.com/mattrltrent/mattrltrent/blob/main/README.md?plain=1).
+
+## Adding the mini badge version
+
+This only shows the total reputation you have.
+
+1. Do all the steps from the big badge above.
+
+2. Append `&mini=true` to the URL (keep the other options, they just don't matter). Added via suggestion from [@yubinjodev](https://github.com/yubinjodev).
 
 ## Limitations:
 
