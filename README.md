@@ -4,15 +4,15 @@ Example of it on my GitHub profile [here](https://github.com/mattrltrent). Star 
 
 1. **Full badge:**
  
-   ![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year)
+   ![stackoverflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year)
 
 3. **With `&mini=true` URL param appended:**
  
-   ![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year&mini=true)
+   ![stackoverflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year&mini=true)
 
 ## Adding full badge version
 
-1. Go to [Stack Overflow](https://stackoverflow.com/), then click on your profile. Once on your profile, you should see a number in the URL bar. This is your **account ID**.
+1. Go to [Stackoverflow](https://stackoverflow.com/), then click on your profile. Once on your profile, you should see a number in the URL bar. This is your **account ID**.
 
    For example, here is my account ID:
 
@@ -48,7 +48,7 @@ This only shows the total reputation you have.
 
 These restrictions shouldn't interfere with regular usage:
 
-- The badge is cached for 15 minutes, so its data can possibly lag 15 minutes behind your true Stack Overflow stats. This is done to reduce server load.
+- The badge is cached for 15 minutes, so its data can possibly lag 15 minutes behind your true Stackoverflow stats. This is done to reduce server load.
 - You're rate limited to loading 15 different stat badges every 60 seconds based on your IP.
 - The StackAPI limits everyone to loading 300 different profiles every 24 hours based on IP.
 
