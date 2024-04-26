@@ -36,7 +36,7 @@ Example of it on my GitHub profile [here](https://github.com/mattrltrent). Star 
 
 6. If you're still struggling, check out how I added it to my own profile's `README.md` [here](https://github.com/mattrltrent/mattrltrent/blob/main/README.md?plain=1).
 
-## Adding the mini badge version
+## Adding mini badge version
 
 This only shows the total reputation you have.
 
