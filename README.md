@@ -1,11 +1,13 @@
 # Stackoverflow Stats Badge For Your GitHub Profile 🚀
 
-Example of it on my GitHub profile [here](https://github.com/mattrltrent). Give it a star if it helps you! ⭐️
+Example of it on my GitHub profile [here](https://github.com/mattrltrent). Star it if it helps you! ⭐️
 
 1. **Full badge:**
+ 
    ![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year)
 
-2. **With `&mini=true` URL param appended:**
+3. **With `&mini=true` URL param appended:**
+ 
    ![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year&mini=true)
 
 ## Adding full badge version
