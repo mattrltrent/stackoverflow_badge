@@ -44,7 +44,7 @@ This only shows the total reputation you have.
 
 2. Append `&mini=true` to the URL (keep the other options, they just don't matter). Added via suggestion from [@yubinjodev](https://github.com/yubinjodev).
 
-## Limitations:
+## Limitations
 
 These restrictions shouldn't interfere with regular usage:
 
