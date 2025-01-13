@@ -13,9 +13,9 @@
       <stop offset="0%" stop-color="#FFA116" />
       <stop offset="100%" stop-color="#F48024" />
     </linearGradient>
-    <linearGradient id="grayGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="grayGradient" x1="0%" y1="100%" x2="0%" y2="0%">
       <stop offset="0%" stop-color="#444" />
-      <stop offset="100%" stop-color="#262522" />
+      <stop offset="100%" stop-color="#4f4a43" />
     </linearGradient>
   </defs>
 
