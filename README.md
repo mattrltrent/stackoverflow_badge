@@ -34,7 +34,7 @@ Example of it on my GitHub profile [here](https://github.com/mattrltrent). Star 
 
    `![some text to render if the image fails to load](step 4 URL)`
 
-6. If you're still struggling, check out how I added it to my own profile's `README.md` [here](https://github.com/mattrltrent/mattrltrent/blob/main/README.md?plain=1).
+6. If you're still struggling, check out how I added it to my own profile's `README.md` [here](https://github.com/mattrltrent/mattrltrent/blob/main/README.md?plain=1). It looks like: `![stackoverflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year&mini=true)`, where this has my own "USERNAME" (13029516) and "PERIOD" (year).
 
 ## Adding mini badge version
 
