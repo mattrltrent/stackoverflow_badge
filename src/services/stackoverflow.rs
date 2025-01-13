@@ -79,13 +79,15 @@ struct BadgeCounts {
 }
 
 async fn gen_card(query: QueryParams) -> impl Responder {
+    println!("Query received");
     update_use_counter().await;
     let user = match reqwest::Client::builder()
         .gzip(true)
+        .user_agent("StackOverflowBadge/1.0")
         .build()
         .unwrap()
         .get(format!(
-            "https://api.stackexchange.com/2.2/users/{}?&site=stackoverflow",
+            "https://api.stackexchange.com/2.2/users/{}?site=stackoverflow",
             &query.username
         ))
         .send()
@@ -93,6 +95,7 @@ async fn gen_card(query: QueryParams) -> impl Responder {
     {
         Ok(response) => {
             if response.status() != 200 {
+                println!("non-200 status code: {:?}", response);
                 return HttpResponse::InternalServerError().finish();
             } else {
                 let json = match response.json::<serde_json::Value>().await {
@@ -108,7 +111,6 @@ async fn gen_card(query: QueryParams) -> impl Responder {
         }
         Err(_) => return HttpResponse::InternalServerError().finish(),
     };
-    // let svg_content = include_str!("../../assets/stackoverflow.svg"); // stackoverflow
     let mut svg_content = include_str!("../../assets/stackoverflow.svg");
     if query.mini.is_some() && query.mini.unwrap(){
         svg_content = include_str!("../../assets/stackoverflow_mini.svg");
