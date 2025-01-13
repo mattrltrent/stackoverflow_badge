@@ -1,25 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="50">
-    <defs>
-      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#FFA116" />
-        <stop offset="35%" stop-color="#F6BA6F" />
-        <stop offset="100%" stop-color="#F6BA6F" />
-      </linearGradient>
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap');
-        text {
-          font-family: 'Open Sans', sans-serif;
-        }
-      </style>
-    </defs>
-    <rect x="0" y="0" width="100%" height="100%" fill="url(#gradient)" rx="4"/>
-    <!-- Reputation Text -->
-    <text x="17" y="31.5" font-size="20" font-weight="bold" fill="#fff">{{rep}} rep.</text>
-    <!-- Stack Overflow Logo -->
-    <svg x="160" y="12" width="25" height="25" viewBox="0 0 32 37">
-      <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path>
-      <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#F48024"></path>
-    </svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="20">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap');
+      text {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+    <clipPath id="clip">
+      <rect x="0" y="0" width="140" height="20" rx="3" />
+    </clipPath>
+  </defs>
 
+  <!-- Outer Rounded Clip -->
+  <g clip-path="url(#clip)">
+    <!-- Left Background -->
+    <rect x="0" y="0" width="35" height="20" fill="#F48024" />
+
+    <!-- Right Background -->
+    <rect x="35" y="0" width="105" height="20" fill="#555" />
+  </g>
+
+  <!-- Stack Overflow Logo -->
+  <svg x="10" y="3.4" width="14" height="12.5" viewBox="0 0 32 37">
+    <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#BCBBBB"></path>
+    <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#FFF"></path>
   </svg>
-  
+
+  <!-- Text: Reputation Count -->
+  <text x="130" y="13.5" font-size="11" font-family="Poppins, Open Sans, sans-serif" fill="#fff" text-anchor="end">
+    {{rep}} rep.
+  </text>
+</svg>
