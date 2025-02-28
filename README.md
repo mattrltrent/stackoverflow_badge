@@ -1,50 +1,17 @@
 # Stackoverflow Stats Badge For Your GitHub Profile 🚀
 
-Example of it on my GitHub profile [here](https://github.com/mattrltrent). Star it if it helps you! ⭐️
+![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year&mini=true)
 
-1. **Full badge:**
- 
-   ![stackoverflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year)
+![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year&mini=false)
 
-3. **With `&mini=true` URL param appended:**
- 
-   ![stackoverflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year&mini=true)
+Example badge in use on my [GitHub profile](https://github.com/mattrltrent).
 
-## Adding full badge version
+## Usage
 
-1. Go to [Stackoverflow](https://stackoverflow.com/), then click on your profile. Once on your profile, you should see a number in the URL bar. This is your **account ID**.
-
-   For example, here is my account ID:
-
-   <img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_2.jpeg?raw=true"  style="display: inline"/>
-
-2. Displayed on the stats badge is "*+ some number of reputation per some time period*". You need to choose over what time period you want us to calculate your reputation gain. The options are `day`,  `week`, `month`, `quarter`, and `year`. This is your **period**.
-
-3. Take the base URL, and insert your newly found **account ID** and **period** where appropriate: 
-
-   <img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_3.jpg?raw=true"  style="display: inline"/>
-
-   For example, here is the URL for my account if I wanted to show my reputation gain quarterly:
-
-   <img  src="https://github.com/mattrltrent/stackoverflow_badge/blob/main/assets/github/demo_4.jpg?raw=true"  style="display: inline"/>
-
-4. Here is the copyable version, just change the "USERNAME" and "PERIOD": https://stackoverflow-badge.herokuapp.com/stackoverflow?username=USERNAME&period=PERIOD.
-
-5. Insert this URL from step 4 into your GitHub profile's `README.md` exactly like this (obviously with your own failure text and personalized URL):
-
-   `![some text to render if the image fails to load](step 4 URL)`
-
-6. If you're still struggling, check out how I added it to my own profile's `README.md` [here](https://github.com/mattrltrent/mattrltrent/blob/main/README.md?plain=1).
-
-7. Overall, the badge should look like: `![stackoverflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year&mini=true)`, but with your own "USERNAME" (mine: 13029516), "PERIOD" (mine: year), and choice of `&mini=true/false`. You can also surround it in a link tag to make it clickable. For example: `[![stackoverflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=13029516&period=year&mini=true)](https://stackoverflow.com/users/13029516/matthew-trent)` will lead to my Stackoverflow profile.
-
-## Adding mini badge version
-
-This only shows the total reputation you have.
-
-1. Do all the steps from the big badge above.
-
-2. Append `&mini=true` to the URL (keep the other options, they just don't matter). Added via suggestion from [@yubinjodev](https://github.com/yubinjodev).
+1. Copy/paste into your Markdown: `![stack overflow rep. badge](https://stackoverflow-badge.herokuapp.com/stackoverflow?username=YOUR_USERNAME&period=PERIOD&mini=IS_MINI)`.
+2. Change `YOUR_USERNAME` to be your account ID. This is found by going to your Stack Overflow profile and getting the number in the URL. For example, for my account I'd go [here](https://stackoverflow.com/users/13029516/matthew-trent), and then see `13029516` in the URL.
+3. Change `PERIOD` to be one of: `day`,  `week`, `month`, `quarter`, or `year`. This is how we calculate the "+XXX this day/week/month/quarter/year" on the big badge.
+4. Change `IS_MINI` to be either `true` or `false`. A mini badge ignores the `PERIOD` value, but still requires it. 
 
 ## Limitations
 
@@ -58,3 +25,4 @@ These restrictions shouldn't interfere with regular usage:
 
 - Issues [here](https://github.com/mattrltrent/stackoverflow_badge/issues).
 - PRs [here](https://github.com/mattrltrent/stackoverflow_badge/pulls).
+- Thanks [@yubinjodev](https://github.com/yubinjodev) for the mini badge suggestion.
