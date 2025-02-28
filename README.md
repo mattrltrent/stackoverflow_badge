@@ -21,7 +21,7 @@ These restrictions shouldn't interfere with regular usage:
 - You're rate limited to loading 15 different stat badges every 60 seconds based on your IP.
 - The StackAPI limits everyone to loading 300 different profiles every 24 hours based on IP.
 
-## Feel free to create issues or PRs!
+## Feel free to create Issues or PRs!
 
 - Issues [here](https://github.com/mattrltrent/stackoverflow_badge/issues).
 - PRs [here](https://github.com/mattrltrent/stackoverflow_badge/pulls).
